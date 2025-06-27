@@ -38,15 +38,6 @@
         .animate-fade-in {
             animation: fadeIn 1s ease-in forwards;
         }
-       #mobile-menu {
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    transform: translateY(-100%);
-    opacity: 0;
-}
-#mobile-menu:not(.hidden) {
-    transform: translateY(0);
-    opacity: 1;
-}
         .hero-slider {
             transition: transform 0.5s ease-in-out;
         }
@@ -58,6 +49,15 @@
         .scroll-animate.visible {
             animation: slideIn 0.8s ease-out forwards;
         }
+       #mobile-menu {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+       }
+       #mobile-menu:not(.hidden) {
+    transform: translateY(0);
+    opacity: 1;
+       }
     </style>
 </head>
 <body class="bg-white font-sans">
