@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <title>InternWala: Join Our Programs</title>
+       <meta content="width=device-width, initial-scale=1.0" name="viewport">
+       <meta content="internwala.in, join, internships, training" name="keywords">
+       <meta content="Join InternWala to access internships and training programs for college and school students in Rewa with 20+ companies and Rewake certification." name="description">
+       <!-- Open Graph Meta Tags -->
+       <meta property="og:type" content="website" />
+       <meta property="og:title" content="InternWala: Join Our Programs" />
+       <meta property="og:description" content="Join InternWala to access internships and training programs for college and school students in Rewa with 20+ companies and Rewake certification." />
+       <meta property="og:url" content="https://<your-username>.github.io/internwala-website/join.html" />
+       <meta property="og:image" content="https://via.placeholder.com/1200x630?text=InternWala+Join" />
+       <!-- Twitter Card Meta Tags -->
+       <meta name="twitter:card" content="summary_large_image" />
+       <meta name="twitter:title" content="InternWala: Join Our Programs" />
+       <meta name="twitter:description" content="Join InternWala to access internships and training programs for college and school students in Rewa with 20+ companies and Rewake certification." />
+       <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=InternWala+Join" />
+       <script src="https://cdn.tailwindcss.com"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+       <link rel="stylesheet" href="style.css">
+       <!-- EmailJS SDK -->
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+       <script type="text/javascript">
+           (function(){
+               emailjs.init("<your-emailjs-public-key>");
+           })();
+       </script>
+   </head>
+   <body class="bg-white font-sans">
+       <!-- Header -->
+       <header class="bg-gradient-to-r from-blue-600 to-orange-500 text-white sticky top-0 z-50 shadow-lg">
+           <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+               <div class="text-2xl font-bold">INTERNWALA.in</div>
+               <div class="hidden md:flex space-x-6">
+                   <a href="index.html#home" class="hover:text-orange-200 transition">Home</a>
+                   <a href="index.html#services" class="hover:text-orange-200 transition">Services</a>
+                   <a href="index.html#contact" class="hover:text-orange-200 transition">Contact</a>
+               </div>
+               <div class="md:hidden">
+                   <button id="menu-toggle" class="focus:outline-none">
+                       <i class="fas fa-bars text-2xl"></i>
+                   </button>
+               </div>
+           </nav>
+           <!-- Mobile Menu -->
+           <div id="mobile-menu" class="hidden md:hidden bg-blue-600 text-white">
+               <a href="index.html#home" class="block px-4 py-2 hover:bg-orange-500">Home</a>
+               <a href="index.html#services" class="block px-4 py-2 hover:bg-orange-500">Services</a>
+               <a href="index.html#contact" class="block px-4 py-2 hover:bg-orange-500">Contact</a>
+           </div>
+       </header>
+
+       <!-- Join Form Section -->
+       <section id="join" class="container mx-auto px-4 py-16">
+           <h2 class="text-3xl md:text-4xl font-bold text-blue-600 text-center mb-12 animate-slide-in">Join InternWala</h2>
+           <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg animate-slide-in" style="animation-delay: 0.2s;">
+               <div id="form-content">
+                   <p class="text-gray-700 mb-4">Fill out the form to join our internship and training programs!</p>
+                   <form id="join-now-form">
+                       <div class="mb-4">
+                           <label for="name" class="block text-gray-700 mb-1">Name</label>
+                           <input type="text" id="name" name="name" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                       </div>
+                       <div class="mb-4">
+                           <label for="college" class="block text-gray-700 mb-1">College/School</label>
+                           <input type="text" id="college" name="college" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                       </div>
+                       <div class="mb-4">
+                           <label for="year" class="block text-gray-700 mb-1">Year of Study</label>
+                           <input type="text" id="year" name="year" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                       </div>
+                       <div class="mb-4">
+                           <label for="contact" class="block text-gray-700 mb-1">Contact Number</label>
+                           <input type="tel" id="contact" name="contact" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                       </div>
+                       <div class="mb-4">
+                           <label for="city" class="block text-gray-700 mb-1">City</label>
+                           <input type="text" id="city" name="city" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                       </div>
+                       <div class="mb-4">
+                           <label for="state" class="block text-gray-700 mb-1">State</label>
+                           <input type="text" id="state" name="state" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                       </div>
+                       <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition w-full">Submit</button>
+                   </form>
+               </div>
+               <div id="thank-you-message" class="hidden text-center">
+                   <h2 class="text-2xl font-bold text-blue-600 mb-4">Thank You!</h2>
+                   <p class="text-gray-700 mb-4">Thank you for contacting InternWala. We will call you soon!</p>
+                   <a href="index.html" class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600">Back to Home</a>
+               </div>
+           </div>
+       </section>
+
+       <!-- Footer -->
+       <footer class="bg-gradient-to-r from-blue-600 to-orange-500 text-white py-8">
+           <div class="container mx-auto px-4 text-center">
+               <div class="mb-4">
+                   <a href="https://facebook.com" target="_blank" class="mx-2 text-2xl hover:text-orange-200 transition"><i class="fab fa-facebook"></i></a>
+                   <a href="https://twitter.com" target="_blank" class="mx-2 text-2xl hover:text-orange-200 transition"><i class="fab fa-twitter"></i></a>
+                   <a href="https://linkedin.com" target="_blank" class="mx-2 text-2xl hover:text-orange-200 transition"><i class="fab fa-linkedin"></i></a>
+                   <a href="https://instagram.com" target="_blank" class="mx-2 text-2xl hover:text-orange-200 transition"><i class="fab fa-instagram"></i></a>
+               </div>
+               <p>© 2025 InternWala. All rights reserved.</p>
+           </div>
+       </footer>
+
+       <script defer src="script.js"></script>
+   </body>
+   </html>
