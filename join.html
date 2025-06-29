@@ -61,13 +61,38 @@
                            <input type="text" id="college" name="college" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
                        </div>
                        <div class="mb-4">
-                           <label for="year" class="block text-gray-700 mb-1">Year of Study</label>
-                           <input type="text" id="year" name="year" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
-                       </div>
+                        <label for="year" class="block text-gray-700 mb-1">Year of Study</label>
+                        <select id="year" name="year" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                            <option value="" disabled selected>Select year of study</option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                        </select>
+                    </div>
                        <div class="mb-4">
                            <label for="contact" class="block text-gray-700 mb-1">Contact Number</label>
                            <input type="tel" id="contact" name="contact" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
                        </div>
+                      <div class="mb-4">
+                        <label for="internship-field" class="block text-gray-700 mb-1">Internship Field</label>
+                        <select id="internship-field" name="internship-field" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                            <option value="" disabled selected>Select an internship field</option>
+                            <option value="Technology & Engineering">Technology & Engineering</option>
+                            <option value="Data & Analytics">Data & Analytics</option>
+                            <option value="Digital Marketing & Media">Digital Marketing & Media</option>
+                            <option value="Design & Creativity">Design & Creativity</option>
+                            <option value="Business Development & Strategy">Business Development & Strategy</option>
+                            <option value="Sales & Customer Support">Sales & Customer Support</option>
+                            <option value="Finance & Accounting">Finance & Accounting</option>
+                            <option value="Legal & Compliance">Legal & Compliance</option>
+                            <option value="Human Resources & Administration">Human Resources & Administration</option>
+                            <option value="Content & Communication">Content & Communication</option>
+                            <option value="Education & Research Assistance">Education & Research Assistance</option>
+                            <option value="Environment & Sustainability">Environment & Sustainability</option>
+                            <option value="Event & Operations Management">Event & Operations Management</option>
+                        </select>
+                    </div>
                        <div class="mb-4">
                            <label for="city" class="block text-gray-700 mb-1">City</label>
                            <input type="text" id="city" name="city" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-orange-500" required>
